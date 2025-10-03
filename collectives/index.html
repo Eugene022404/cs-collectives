@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C&S Collectives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #d9d4c8;
+            padding: 40px 60px;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .logo {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 42px;
+            font-style: italic;
+            color: #2c2c2c;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c2c2c;
+            font-size: 16px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        nav a.active {
+            color: #9b8f7a;
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .model-image {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .model-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #2c2c2c;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #9b8f7a;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #867b68;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"> C&S Collectives</div>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>C&S Collectives</h1>
+                <p class="description">
+                    Discover the latest trend  in our newest collections. Design for style and comfort, one-pieces elevate your everyday look. Don't miss out shop now.
+                </p>
+                <button class="cta-button">SHOP NOW</button>
+            </div>
+            <div class="model-image">
+                <img src="images/MODEL.png" alt="Model showcasing new arrivals">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

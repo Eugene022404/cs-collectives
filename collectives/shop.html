@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Collectives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #d9d4c8;
+            padding: 40px 60px;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 42px;
+            font-style: italic;
+            color: #2c2c2c;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c2c2c;
+            font-size: 16px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        nav a.active {
+            color: #9b8f7a;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #9b8f7a;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">C&S Collectives</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        
+        <h1 class="page-title">Our Products</h1>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="images/collectives-blackcrop.jpg" alt="Black Crop Top" class="product-image">
+                <div class="product-name">Black Crop Top</div>
+                <div class="product-price">₱350</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/collectives-blackshirt.jpg" alt="Black Shirt" class="product-image">
+                <div class="product-name">Black Shirt</div>
+                <div class="product-price">₱700</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/collectives-whiteshirt.jpg" alt="White Shirt" class="product-image">
+                <div class="product-name">White Shirt</div>
+                <div class="product-price">₱700</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/collectives-shortleft.jpg" alt="Shorts - Left View" class="product-image">
+                <div class="product-name">Casual Shorts</div>
+                <div class="product-price">$24.99</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/collectives-shortright.jpg" alt="Shorts - Right View" class="product-image">
+                <div class="product-name">Athletic Shorts</div>
+                <div class="product-price">₱700</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
